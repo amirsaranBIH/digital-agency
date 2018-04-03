@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ========= */
+/* VARIABLES */
+/* ========= */
+:root {
+  /* Main colors */
+  --orange: #de813c;
+  --blue: #3f519a;
+  --yellow: #fc9e20;
+  --headerHeight: 75px;
+  /* Font colors */
+  --fontBlack: #040404;
+  --fontGrey: #333332;
+}
+
+/* Importing font 'Bernadette' */
+@font-face {
+    font-family: Bernadette;
+    src: url('../fonts/bernadette.ttf');
+}
+
+body {
+  background-color: #ececec;
+  font-family: 'Lato', sans-serif;
+  color: var(--fontBlack);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bernadette', cursive;
+  color: var(--fontGrey);
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: 75px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h2.headline {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+h2.heading {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px 15px;
+  margin-top: 15px;
+}
+
+a.btn-colorful {
+  background: var(--orange);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, var(--blue), var(--orange));
+  background: linear-gradient(to left, var(--blue), var(--orange));
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+#page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+#page-header .row {
+  height: var(--headerHeight);
+}
+
+#page-navigation {
+  display: none;
+}
+
+#brand {
+  letter-spacing: -2px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#brand span {
+  color: var(--orange);
+}
+
+
+#hero {
+  text-align: center;
+  padding-top: var(--headerHeight);
+  background-image: url('../images/photographers-on-rails.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+#hero h1, #hero h2, #hero p {
+  color: white;
+}
+
+
+.reason {
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.reason-content {
+  padding: 10px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.reason-content h2 {
+  margin-top: 5px;
+}
+
+.reason-content .btn {
+  position: absolute;
+  white-space: nowrap;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+#testimonials .row {
+  margin-top: 20px;
+}
+
+#testimonials .col-10 h2 {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#quote {
+  padding-right: 10px;
+}
+
+
+#features .row {
+  display: none;
+}
+
+.services-icons {
+  text-align: center;
+}
+
+.services-icons .col-md-6 {
+  margin: 15px 0;
+}
+
+.services-icons img {
+  padding: 12px;
+  border-radius: 20px;
+  background-color: var(--blue);
+}
+
+@media (min-width: 768px) {
+  #reasons {
+    position: relative;
+    bottom: 75px;
+    margin-bottom: -75px;
+  }
+}
